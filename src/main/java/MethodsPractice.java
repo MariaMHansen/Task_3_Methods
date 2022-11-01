@@ -1,4 +1,7 @@
-public class SimpleTests {
+public class MethodsPractice {
+    public static void main(String[] args) {
+        MethodsPractice.sayHello();
+    }
     // Write a public static function `sayHello` that returns "hello world!"
     public static String sayHello(){
         // Add Your Code Here ...
