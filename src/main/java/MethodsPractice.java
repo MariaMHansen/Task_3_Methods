@@ -10,7 +10,7 @@ public class MethodsPractice {
 
     // Write a public static function that counts how many times the letter combination "dog" appears in the string
     public static int countDogs(String phrase) {
-        // Add Your Code Here ...
+        // Add Your Code Here comments
         return -1;
     }
 }
