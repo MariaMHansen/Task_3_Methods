@@ -107,7 +107,7 @@ public class MethodsPractice {
      *     such as %,&,£,$ etc.
      *     Make a method that checks if a password contains any symbol
      *     form an array of characters, which is also provided as input.
-     *     Example: Using ("Pa$$word123",new char[]{'$','%','&'}) as input would return true
+     *     Example: Using ("Pa%%word123",new char[]{'+','%','-'}) as input would return true
      *     Tip! Remember the nested loop exercise from the previous assignment
      * @param password String to be checked for spaces
      * @param symbols char array of special symbols to be checked
