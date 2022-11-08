@@ -112,7 +112,7 @@ class MethodsPracticeTest {
     @Test
     void passwordContainsSymbolCheckerTest() {
         // if method fails to identify that password contains symbols
-        if(MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'%','%','%'})==false){
+        if(MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'+','%','-'})==false){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -128,12 +128,12 @@ class MethodsPracticeTest {
             );
         }
         // if method fails to identify that password does not contain symbols
-        if(MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'%','%','%'})==true){
+        if(MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'+','%','-'})==true){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
                     "Step 4:\n" +
-                    " The method failed to identify that password does not contain special symbols '$','%','&'\n" +
+                    " The method failed to identify that password does not contain special symbols '+','%','-'\n" +
                     "          Try using nested for each loops to check if each\n"+
                     "          letter from password letters char[] \n"+
                     "          matches a symbol from the symbols char array \n"+
@@ -143,8 +143,8 @@ class MethodsPracticeTest {
                     "-------------------------------------------------------------------------\n"
             );
         }
-        Assertions.assertEquals(true, MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'$','%','&'}));
-        Assertions.assertEquals(false, MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'$','%','&'}));
+        Assertions.assertEquals(true, MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'+','%','-'}));
+        Assertions.assertEquals(false, MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'+','%','-'}));
     }
 
     // Step 5 Test

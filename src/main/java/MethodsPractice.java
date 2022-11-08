@@ -36,8 +36,8 @@ public class MethodsPractice {
         System.out.println("Step 1: passwordLengthChecker: " + passwordLengthChecker("Password123"));
         System.out.println("Step 2: stringToCharArray: " + Arrays.toString(stringToCharArray("Password123")));
         System.out.println("Step 3: passwordContainsUpperCase: " + passwordContainsUpperCase("Password123"));
-        System.out.println("Step 4: passwordContainsSymbolChecker: " + passwordContainsSymbolChecker("Pa$$word123",new char[]{'$','%','&'}));
-        System.out.println("Step 5: passfordStrengthEvaluator: " + passwordStrengthEvaluator("BaCdGzWZ$"));
+        System.out.println("Step 4: passwordContainsSymbolChecker: " + passwordContainsSymbolChecker("Pa%%word123",new char[]{'+','%','-'}));
+        System.out.println("Step 5: passwordStrengthEvaluator: " + passwordStrengthEvaluator("BaCdGzWZ%"));
     }
 
     /**
@@ -150,7 +150,7 @@ public class MethodsPractice {
      */
 
     public static String passwordStrengthEvaluator(String password){
-        char[] symbols ={'$','%','&','£'};
+        char[] symbols ={'+','%','-'};
          if(passwordLengthChecker(password)){
              if(passwordContainsSymbolChecker(password,symbols)){
                  if(passwordContainsUpperCase(password)){
