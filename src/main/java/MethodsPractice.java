@@ -119,6 +119,7 @@ public class MethodsPractice {
      * Difficulty: 4
      */
     // check if it has an array of symbols ...
+    // hello againgit
    public static boolean passwordContainsSymbolChecker(String password, char[] symbols){
        char[] letters = stringToCharArray(password);
        for (char letter: letters) {
