@@ -104,7 +104,7 @@ public class MethodsPractice {
     /**
      *  STEP 4:
      *     Password strength increases if it contains special symbols,
-     *     such as %,&,£,$ etc.
+     *     such as '+','%','-' etc.
      *     Make a method that checks if a password contains any symbol
      *     form an array of characters, which is also provided as input.
      *     Example: Using ("Pa%%word123",new char[]{'+','%','-'}) as input would return true
