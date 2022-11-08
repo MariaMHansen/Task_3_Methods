@@ -112,7 +112,7 @@ class MethodsPracticeTest {
     @Test
     void passwordContainsSymbolCheckerTest() {
         // if method fails to identify that password contains symbols
-        if(MethodsPractice.passwordContainsSymbolChecker("Pa$$word123",new char[]{'%','%','%'})==false){
+        if(MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'%','%','%'})==false){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -143,7 +143,7 @@ class MethodsPracticeTest {
                     "-------------------------------------------------------------------------\n"
             );
         }
-        Assertions.assertEquals(true, MethodsPractice.passwordContainsSymbolChecker("Pa$$word123",new char[]{'$','%','&'}));
+        Assertions.assertEquals(true, MethodsPractice.passwordContainsSymbolChecker("Pa%%word123",new char[]{'$','%','&'}));
         Assertions.assertEquals(false, MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'$','%','&'}));
     }
 
@@ -152,7 +152,7 @@ class MethodsPracticeTest {
     @Test
     void passwordStrengthEvaluatorTest() {
         // checks if return Strings are upper case
-        if(MethodsPractice.passwordStrengthEvaluator("123").equals("Weak")||MethodsPractice.passwordStrengthEvaluator("pa$$word123").equals("Medium")){
+        if(MethodsPractice.passwordStrengthEvaluator("123").equals("Weak")||MethodsPractice.passwordStrengthEvaluator("pa%%word123").equals("Medium")){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
