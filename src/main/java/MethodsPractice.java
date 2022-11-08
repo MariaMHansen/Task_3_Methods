@@ -118,8 +118,7 @@ public class MethodsPractice {
      * New skills: comparing two arrays
      * Difficulty: 4
      */
-    // check if it has an array of symbols ...
-    // hello againgit hello
+
    public static boolean passwordContainsSymbolChecker(String password, char[] symbols){
        char[] letters = stringToCharArray(password);
        for (char letter: letters) {
@@ -160,18 +159,5 @@ public class MethodsPractice {
              }
          }
         return "weak";
-    }
-
-
-
- //hello hello
-
-
-    ////////////OLD CODE/////////////////////
-
-    // Write a public static function `sayHello` that returns "hello world!"
-    public static String sayHello(){
-        // Add Your Code Here ...
-        return "hello world!";
     }
 }

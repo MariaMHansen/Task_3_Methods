@@ -27,7 +27,7 @@ class MethodsPracticeTest {
                     "-------------------------------------------------------------------------\n"
             );
         }
-        // Feedback in case the short password returnd true
+        // Feedback in case the short password returns true
         if(MethodsPractice.passwordLengthChecker("12345678")==false){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
@@ -204,10 +204,4 @@ class MethodsPracticeTest {
         Assertions.assertEquals("medium", MethodsPractice.passwordStrengthEvaluator("pa$$word123"));
         Assertions.assertEquals("strong", MethodsPractice.passwordStrengthEvaluator("Pa$$word123"));
     }
-    @DisplayName("checks if sayHello method returns String hello world")
-    @Test
-    void Should_ReturnHelloWorld() {
-        Assertions.assertEquals("hello world!", MethodsPractice.sayHello());
-    }
-
 }
