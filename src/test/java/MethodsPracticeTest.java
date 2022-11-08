@@ -112,7 +112,7 @@ class MethodsPracticeTest {
     @Test
     void passwordContainsSymbolCheckerTest() {
         // if method fails to identify that password contains symbols
-        if(MethodsPractice.passwordContainsSymbolChecker("Pa$$word123",new char[]{'$','%','&'})==false){
+        if(MethodsPractice.passwordContainsSymbolChecker("Pa$$word123",new char[]{'%','%','%'})==false){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -128,7 +128,7 @@ class MethodsPracticeTest {
             );
         }
         // if method fails to identify that password does not contain symbols
-        if(MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'$','%','&'})==true){
+        if(MethodsPractice.passwordContainsSymbolChecker("Password123",new char[]{'%','%','%'})==true){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -165,7 +165,7 @@ class MethodsPracticeTest {
             );
         }
         // if method fails to identify that password contains
-        if(MethodsPractice.passwordStrengthEvaluator("pa$$word123").equals("weak")){
+        if(MethodsPractice.passwordStrengthEvaluator("pa%%word123").equals("weak")){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -183,7 +183,7 @@ class MethodsPracticeTest {
             );
         }
         // if method fails to identify that password contains
-        if(MethodsPractice.passwordStrengthEvaluator("Pa$$word123").equals("medium")){
+        if(MethodsPractice.passwordStrengthEvaluator("Pa%%word123").equals("medium")){
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
@@ -201,7 +201,7 @@ class MethodsPracticeTest {
             );
         }
         Assertions.assertEquals("weak", MethodsPractice.passwordStrengthEvaluator("1234"));
-        Assertions.assertEquals("medium", MethodsPractice.passwordStrengthEvaluator("pa$$word123"));
-        Assertions.assertEquals("strong", MethodsPractice.passwordStrengthEvaluator("Pa$$word123"));
+        Assertions.assertEquals("medium", MethodsPractice.passwordStrengthEvaluator("pa%%word123"));
+        Assertions.assertEquals("strong", MethodsPractice.passwordStrengthEvaluator("Pa%%word123"));
     }
 }
