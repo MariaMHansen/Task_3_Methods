@@ -33,11 +33,11 @@ public class MethodsPractice {
      * Experiment with entering your own attributes
      */
     public static void main(String[] args) {
-        System.out.println("Step 1: passwordLengthChecker: " + passwordLengthChecker("Password123"));
-        System.out.println("Step 2: stringToCharArray: " + Arrays.toString(stringToCharArray("Password123")));
-        System.out.println("Step 3: passwordContainsUpperCase: " + passwordContainsUpperCase("Password123"));
-        System.out.println("Step 4: passwordContainsSymbolChecker: " + passwordContainsSymbolChecker("Pa%%word123",new char[]{'+','%','-'}));
-        System.out.println("Step 5: passwordStrengthEvaluator: " + passwordStrengthEvaluator("BaCdGzWZ%"));
+        //System.out.println("Step 1: passwordLengthChecker: " + passwordLengthChecker("Password123"));
+        //System.out.println("Step 2: stringToCharArray: " + Arrays.toString(stringToCharArray("Password123")));
+        //System.out.println("Step 3: passwordContainsUpperCase: " + passwordContainsUpperCase("Password123"));
+        //System.out.println("Step 4: passwordContainsSymbolChecker: " + passwordContainsSymbolChecker("Pa%%word123",new char[]{'+','%','-'}));
+        //System.out.println("Step 5: passwordStrengthEvaluator: " + passwordStrengthEvaluator("BaCdGzWZ%"));
     }
 
     /**
@@ -58,9 +58,9 @@ public class MethodsPractice {
      */
 
     public static boolean passwordLengthChecker(String password){
-        if(password.length()>=8){return true;}
-        return false;
-        //hello world
+        // Write your code here ...
+
+       return false;
     }
 
     /**
@@ -77,8 +77,9 @@ public class MethodsPractice {
      * Difficulty: 2
      */
     public static char[] stringToCharArray(String str){
-        char[] chars = str.toCharArray();
-        return chars;
+        // Write your code here ...
+
+        return null;
     }
 
     /**
@@ -95,12 +96,8 @@ public class MethodsPractice {
      * Difficulty: 3
      */
     public static boolean passwordContainsUpperCase(String password){
-        char [] letters = stringToCharArray(password);
-         for(char letter:letters){
-                 if (Character.isUpperCase(letter)){
-                      return true;
-                  }
-        }
+        // Write your code here ...
+
         return false;
     }
 
@@ -121,14 +118,8 @@ public class MethodsPractice {
      */
 
    public static boolean passwordContainsSymbolChecker(String password, char[] symbols){
-       char[] letters = stringToCharArray(password);
-       for (char letter: letters) {
-          for(char symbol: symbols){
-              if(letter==symbol){
-                  return true;
-              }
-          }
-       }
+       // Write your code here ...
+
         return false;
    }
 
@@ -149,16 +140,8 @@ public class MethodsPractice {
      * Difficulty: 4
      */
 
-    public static String passwordStrengthEvaluator(String password){
-        char[] symbols ={'+','%','-'};
-         if(passwordLengthChecker(password)){
-             if(passwordContainsSymbolChecker(password,symbols)){
-                 if(passwordContainsUpperCase(password)){
-                     return "strong";
-                 }
-                 return "medium";
-             }
-         }
-        return "weak";
+    public static String passwordStrengthEvaluator(String password) {
+        // Write your code here ...
+        return " ";
     }
 }
